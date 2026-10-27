@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services and starting prices | Keelson Auto Care</title>
+<meta name="description" content="Starting-at prices for maintenance, brakes, diagnostics, tires and hybrid or EV service. Filter the menu, see what each service includes and book online. Fictional brand, concept site.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keelson Auto Care (concept)">
+<meta property="og:title" content="Services and starting prices | Keelson Auto Care">
+<meta property="og:description" content="A filterable service menu with starting-at prices, service details and online booking. Squarespace 7.1 concept with a fictional brand.">
+<meta name="theme-color" content="#111417">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><symbol id="i-wrench" viewBox="0 0 24 24"><path transform="rotate(45 12 12)" d="M10 2.4V5.6h4V2.4A4.4 4.4 0 0 1 13.5 10.46V19.5a1.5 1.5 0 0 1-3 0V10.46A4.4 4.4 0 0 1 10 2.4z"/></symbol><symbol id="i-oil" viewBox="0 0 24 24"><path d="M3.5 11H13l7.6-2.6.6 1.8-7.6 5V19.5H3.5z"/><path d="M6.5 11V8.5h4V11"/><path d="M20.4 13.6c.5.8 1 1.5 1 2a1 1 0 0 1-2 0c0-.5.5-1.2 1-2z"/></symbol><symbol id="i-brake" viewBox="0 0 24 24"><circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="2.6"/><path d="M11 8.4v.01M15.6 13h.01M11 17.6v.01M6.4 13h.01" stroke-width="2.2"/><path d="M12.79 2.86A10.3 10.3 0 0 1 20.68 9.48L17.2 10.74A6.6 6.6 0 0 0 12.15 6.5z" fill="currentColor"/></symbol><symbol id="i-engine" viewBox="0 0 24 24"><path d="M5 10.5h2l1.5-2h7l2 2H19V9h2v8h-2v-1.5h-1.5L15 18H7.5l-2-2H5z"/><path d="M12 8.5V6M9.5 6h5M2.5 10.5v5M2.5 13H5"/></symbol><symbol id="i-tire" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.4"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.64 5.64l1.55 1.55M16.81 16.81l1.55 1.55M5.64 18.36l1.55-1.55M16.81 7.19l1.55-1.55"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><rect x="2.5" y="7" width="16.5" height="10.5" rx="2"/><path d="M19 10.3h1.4a1 1 0 0 1 1 1v1.9a1 1 0 0 1-1 1H19"/><path d="M11.8 8.8 8.4 12.9h3l-.9 3.1 3.6-4.4h-3z" fill="currentColor" stroke-width="1.2"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4M9 14.6l2 2 4-4"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 5.8v5.6c0 4.4-2.9 7.9-7 9.6-4.1-1.7-7-5.2-7-9.6V5.8z"/><path d="m9 12 2.2 2.2L15.4 10"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.9l1.5 4.4-2.1 1.5a10.6 10.6 0 0 0 5.7 5.7l1.5-2.1 4.4 1.5v2.9a2 2 0 0 1-2 2C11.6 19.4 4.6 12.4 4.6 5.5a2 2 0 0 1 2-2z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.2s-6.6-5.9-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.2-6.6 11.1-6.6 11.1z"/><circle cx="12" cy="10.1" r="2.4"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.8 6.8 8.2 6.4 8.2-6.4"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol><symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="m8.5 7 1.6-2.5h3.8L15.5 7"/><circle cx="12" cy="13.5" r="3.6"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M4.5 5h15A1.5 1.5 0 0 1 21 6.5v9a1.5 1.5 0 0 1-1.5 1.5H11l-4.5 3.5V17h-2A1.5 1.5 0 0 1 3 15.5v-9A1.5 1.5 0 0 1 4.5 5z"/><path d="M7.5 9.5h9M7.5 12.5h6"/></symbol><symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><rect x="9" y="3" width="6" height="3.2" rx="1"/><path d="m8.6 12.4 1.8 1.8 3.4-3.4M8.6 17.5h6.8"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="12" r="4"/><path d="M11.5 12H21M18 12v3M15.2 12v2.2"/></symbol><symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4.5 9.5h11V14a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M15.5 11h1.3a2.5 2.5 0 0 1 0 5h-1.6M8 3.5c-.8 1 .8 2 0 3M11.5 3.5c-.8 1 .8 2 0 3"/></symbol><symbol id="i-car" viewBox="0 0 24 24"><path d="M3.2 15.6v-2.4c0-.7.4-1.2 1.1-1.4l2.4-.6 2.1-3.3a2 2 0 0 1 1.7-.9h4.4a2 2 0 0 1 1.6.8l2.6 3.3 1.8.4c.7.2 1.1.7 1.1 1.4v2.4c0 .5-.4.9-.9.9h-.8"/><path d="M9.6 16.5h4.8M5.4 16.5H4.1a.9.9 0 0 1-.9-.9M6.8 11.2h11.6"/><circle cx="7.5" cy="16.5" r="2"/><circle cx="16.5" cy="16.5" r="2"/></symbol><symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.3 17.5a8.5 8.5 0 1 1 15.4 0"/><path d="m12 14 3.6-4.2"/><circle cx="12" cy="14.4" r="1.3"/><path d="M7.4 9.3l.9.8M12 6.6v1.2M16.6 9.3l-.9.8"/></symbol><symbol id="i-parts" viewBox="0 0 24 24"><path d="M12 3.5 19.4 7.8v8.4L12 20.5l-7.4-4.3V7.8z"/><circle cx="12" cy="12" r="3.3"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5M12 14.5v2"/></symbol><symbol id="i-card" viewBox="0 0 24 24"><rect x="2.8" y="5.5" width="18.4" height="13" rx="2"/><path d="M2.8 9.5h18.4M6.5 14.8h4"/></symbol><symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><path d="M4.5 6.5h.01M4.5 12h.01M4.5 17.5h.01" stroke-width="2.6"/></symbol><symbol id="i-layout" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M3.5 9h17M10 9v11"/></symbol><symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.2"/><path d="M10.8 17.6h2.4"/></symbol><symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="1.8"/><path d="M5 8.6c2.4.8 4.6 1.2 7 1.2s4.6-.4 7-1.2M12 9.8v4.4M12 14.2l-3.2 6.3M12 14.2l3.2 6.3"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M6.5 3h7.6L18 6.9V20a1 1 0 0 1-1 1H6.5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M13.5 3v4.2H18M8.6 11.5h6.8M8.6 14.8h6.8M8.6 18h4"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19.5 12h-15M10.5 6l-6 6 6 6"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.4v.1"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></symbol><symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4.2L19 9.2a2.1 2.1 0 0 0-3-3L5.2 17v3z"/><path d="m14.2 8 1.8 1.8"/></symbol><symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.6 21v-7.3H16l.4-2.9h-2.8V9.1c0-.8.3-1.4 1.4-1.4h1.5V5.2c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7v2.1H8.4v2.9h2.4V21z" fill="currentColor" stroke="none"/></symbol><symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></symbol><symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.2 9.2 5 2.8-5 2.8z" fill="currentColor"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to main content</a>
+<!-- Squarespace: Announcement Bar -->
+<section class="announcement" aria-label="Announcement">
+  <div class="container announcement__inner">
+    <p><strong>Same-week appointments</strong><span class="announcement__more"> for maintenance, brakes and hybrid service</span>.</p>
+    <a href="book.html">Book online in about two minutes</a>
+  </div>
+</section>
+<!-- Squarespace: Site Header (logo, navigation, header button; mobile burger menu) -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 2.5 42.6 13.25v21.5L24 45.5 5.4 34.75v-21.5z" fill="#FF6B1A" stroke="#FF6B1A" stroke-width="3" stroke-linejoin="round"/><path d="M15 13h5.4v8.6l7-8.6h6.4L25 23.6 34.2 35h-6.6l-7.2-9.2V35H15z" fill="#111417"/></svg>
+      <span class="brand__text"><span class="brand__name">Keelson</span><span class="brand__tag">Auto Care</span><span class="visually-hidden">, home</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a href="services.html" aria-current="page">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="about.html#process">What to expect</a></li>
+<li><a href="redesign-notes.html">Redesign notes</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <p class="site-header__phone"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span><span class="visually-hidden">Call </span>+1 (555) 0100</span></p>
+      <a class="btn btn--primary btn--sm header-book" href="book.html"><span>Book<span class="long"> a service</span></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon icon-open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="container mobile-menu__inner">
+      <nav aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a href="index.html">Home<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="services.html" aria-current="page">Services and prices<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="book.html">Book a service<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="about.html">About the shop<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="about.html#process">What to expect<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="about.html#warranty">Warranty<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="redesign-notes.html">Redesign notes<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__meta">
+        <p><strong>+1 (555) 0100</strong></p>
+        <p>123 Example Street, Harbor District</p>
+        <p>Mon to Fri 7:30 AM to 6:00 PM, Sat 8:00 AM to 2:00 PM</p>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<!-- Squarespace: Page banner section (dark color theme) -->
+<section class="page-hero theme-dark" aria-labelledby="page-title">
+  <div class="container">
+    <svg class="icon page-hero__glyph" aria-hidden="true" focusable="false"><use href="#i-wrench"/></svg>
+    <p class="eyebrow">Service menu</p>
+    <h1 id="page-title">Services and starting prices</h1>
+    <p class="lead">Real numbers up front. Each price is where the job starts for most cars and light trucks. Your exact price is on your estimate, and you approve it before we pick up a tool.</p>
+    <ul class="page-hero__meta">
+      <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-list"/></svg>22 services in 5 categories</li>
+      <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clipboard"/></svg>Estimate approved before work</li>
+      <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>24-month / 24,000-mile warranty</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Squarespace: filter bar. A small Code block (see app.js, about 40 lines) that toggles
+     the cards below by category. Buttons use aria-pressed; the result count is announced. -->
+<section class="filters" id="menu" aria-label="Filter services">
+  <div class="container filters__inner">
+    <div class="filters__group" role="group" aria-label="Filter services by category">
+      <button type="button" class="filter-btn" data-filter="all" data-label="" aria-pressed="true">All services <span class="count" aria-hidden="true">22</span></button>
+<button type="button" class="filter-btn" data-filter="maintenance" data-label="maintenance" aria-pressed="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg>Maintenance <span class="count" aria-hidden="true">6</span></button>
+<button type="button" class="filter-btn" data-filter="brakes" data-label="brake" aria-pressed="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brake"/></svg>Brakes <span class="count" aria-hidden="true">4</span></button>
+<button type="button" class="filter-btn" data-filter="diagnostics" data-label="diagnostic" aria-pressed="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-engine"/></svg>Diagnostics <span class="count" aria-hidden="true">4</span></button>
+<button type="button" class="filter-btn" data-filter="tires" data-label="tire" aria-pressed="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tire"/></svg>Tires <span class="count" aria-hidden="true">4</span></button>
+<button type="button" class="filter-btn" data-filter="hybrid-ev" data-label="hybrid and EV" aria-pressed="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg>Hybrid and EV <span class="count" aria-hidden="true">4</span></button>
+    </div>
+    <p class="filters__status" id="svc-status" role="status">Showing all 22 services</p>
+  </div>
+</section>
+
+<!-- Squarespace: List section (cards). Each card: title, description, price, duration,
+     a Details button (lightbox) and a Book button that pre-selects the service. -->
+<section class="section theme-light section--tight" aria-labelledby="menu-title">
+  <div class="container">
+    <h2 class="visually-hidden" id="menu-title">Service menu</h2>
+    <ul class="svc-grid" id="svc-grid">
+        <li class="svc-card" id="svc-synthetic-oil" data-id="synthetic-oil" data-cat="maintenance" data-cat-label="Maintenance">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg></span>
+            <span class="tag">Maintenance</span>
+          </div>
+          <h3>Full synthetic oil change</h3>
+          <p class="svc-card__desc">Up to five quarts of full synthetic oil that meets your manufacturer&#x27;s spec, a new filter and a quick check of the basics.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$79</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 45 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Full synthetic oil change</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=synthetic-oil">Book<span class="visually-hidden"> Full synthetic oil change</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Up to five quarts of full synthetic oil that meets your manufacturer&#x27;s spec, a new filter and a quick check of the basics.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Up to 5 quarts of full synthetic oil</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>New oil filter and drain plug gasket</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Fluid top-off and tire pressures set</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Oil life monitor reset</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Vehicles that need extra oil, a cartridge filter or a European oil spec cost a little more. We confirm the price when you book.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-scheduled-maintenance" data-id="scheduled-maintenance" data-cat="maintenance" data-cat-label="Maintenance">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg></span>
+            <span class="tag">Maintenance</span>
+          </div>
+          <h3>Factory scheduled maintenance</h3>
+          <p class="svc-card__desc">The 30k, 60k or 90k mile service from your owner&#x27;s manual, done to the book and documented for your warranty records.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$189</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 2 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Factory scheduled maintenance</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=scheduled-maintenance">Book<span class="visually-hidden"> Factory scheduled maintenance</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>The 30k, 60k or 90k mile service from your owner&#x27;s manual, done to the book and documented for your warranty records.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Every item listed for your mileage interval</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Oil and filter change</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Filter, fluid, belt and hose inspection</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Dated service record for your files</span></li></ul>
+            <h3>Good to know</h3>
+            <p>The exact price depends on your interval. Larger services with spark plugs or fluid changes are quoted in advance.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-battery" data-id="battery" data-cat="maintenance" data-cat-label="Maintenance">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg></span>
+            <span class="tag">Maintenance</span>
+          </div>
+          <h3>12V battery test and replacement</h3>
+          <p class="svc-card__desc">We test the battery, starter and charging system first, and only replace the battery if it actually needs it.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$189</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 30 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: 12V battery test and replacement</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=battery">Book<span class="visually-hidden"> 12V battery test and replacement</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>We test the battery, starter and charging system first, and only replace the battery if it actually needs it.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Battery, starter and alternator test</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Standard replacement battery, installed</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Terminal cleaning and protection</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Old battery recycled</span></li></ul>
+            <h3>Good to know</h3>
+            <p>AGM batteries and cars that need a new battery registered with the vehicle computer cost more. The test on its own is free.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-coolant" data-id="coolant" data-cat="maintenance" data-cat-label="Maintenance">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg></span>
+            <span class="tag">Maintenance</span>
+          </div>
+          <h3>Coolant exchange</h3>
+          <p class="svc-card__desc">Old coolant out, the correct type in, and a pressure test to catch small leaks before they turn into overheating.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$149</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1 hour</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Coolant exchange</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=coolant">Book<span class="visually-hidden"> Coolant exchange</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Old coolant out, the correct type in, and a pressure test to catch small leaks before they turn into overheating.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Drain and refill with the coolant your engine specifies</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Cooling system pressure test</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Hose and radiator cap check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Freeze protection reading</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Hybrid and EV battery cooling loops are a separate service, listed under Hybrid and EV.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-transmission-fluid" data-id="transmission-fluid" data-cat="maintenance" data-cat-label="Maintenance">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg></span>
+            <span class="tag">Maintenance</span>
+          </div>
+          <h3>Transmission fluid service</h3>
+          <p class="svc-card__desc">Fresh automatic or CVT fluid to the factory spec, with the level set the way your manufacturer requires.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$199</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1.5 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Transmission fluid service</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=transmission-fluid">Book<span class="visually-hidden"> Transmission fluid service</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Fresh automatic or CVT fluid to the factory spec, with the level set the way your manufacturer requires.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Drain and fill with manufacturer-approved fluid</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pan gasket and filter where serviceable</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Level set at the correct temperature</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Some transmissions need two drain and fill cycles to fully refresh the fluid. We tell you before we start.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-filters" data-id="filters" data-cat="maintenance" data-cat-label="Maintenance">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg></span>
+            <span class="tag">Maintenance</span>
+          </div>
+          <h3>Engine and cabin air filters</h3>
+          <p class="svc-card__desc">Both air filters replaced, so the engine breathes easier and the air inside the car stays cleaner.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$59</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 20 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Engine and cabin air filters</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=filters">Book<span class="visually-hidden"> Engine and cabin air filters</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Both air filters replaced, so the engine breathes easier and the air inside the car stays cleaner.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Engine air filter</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Cabin air filter</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Intake housing check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Before and after photos</span></li></ul>
+            <h3>Good to know</h3>
+            <p>A few vehicles hide the cabin filter behind dash trim, which adds labor. We will tell you when you book.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-brake-inspection" data-id="brake-inspection" data-cat="brakes" data-cat-label="Brakes">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brake"/></svg></span>
+            <span class="tag">Brakes</span>
+          </div>
+          <h3>Brake inspection</h3>
+          <p class="svc-card__desc">Pad and rotor measurements, a brake fluid test and a road test, with photos of anything worth discussing.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$39</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 30 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Brake inspection</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=brake-inspection">Book<span class="visually-hidden"> Brake inspection</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Pad and rotor measurements, a brake fluid test and a road test, with photos of anything worth discussing.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pad thickness measured at every wheel</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Rotor condition and thickness check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Brake fluid moisture test</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test and photo report</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Free when you add it to any other service on the same visit.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-brake-pads" data-id="brake-pads" data-cat="brakes" data-cat-label="Brakes">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brake"/></svg></span>
+            <span class="tag">Brakes</span>
+          </div>
+          <h3>Brake pad replacement</h3>
+          <p class="svc-card__desc">Quality ceramic pads, cleaned and lubricated slide pins, and a test drive to bed the new pads in properly.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$189 <small>per axle</small></dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1.5 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Brake pad replacement</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=brake-pads">Book<span class="visually-hidden"> Brake pad replacement</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Quality ceramic pads, cleaned and lubricated slide pins, and a test drive to bed the new pads in properly.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Ceramic brake pads for one axle</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Caliper slide pins cleaned and lubricated</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>New hardware where needed</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test and pad bedding</span></li></ul>
+            <h3>Good to know</h3>
+            <p>If your rotors are below minimum thickness we show you the measurement and quote pads and rotors instead.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-pads-rotors" data-id="pads-rotors" data-cat="brakes" data-cat-label="Brakes">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brake"/></svg></span>
+            <span class="tag">Brakes</span>
+          </div>
+          <h3>Pads and rotors</h3>
+          <p class="svc-card__desc">New pads and rotors for one axle, for when the old rotors are worn thin, warped or deeply grooved.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$389 <small>per axle</small></dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 2 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Pads and rotors</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=pads-rotors">Book<span class="visually-hidden"> Pads and rotors</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>New pads and rotors for one axle, for when the old rotors are worn thin, warped or deeply grooved.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Ceramic pads and new rotors for one axle</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Hub faces cleaned for a true fit</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Caliper service and new hardware</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test and pad bedding</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Performance, oversized and some truck brakes cost more. We quote exact parts before any work starts.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-brake-fluid" data-id="brake-fluid" data-cat="brakes" data-cat-label="Brakes">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brake"/></svg></span>
+            <span class="tag">Brakes</span>
+          </div>
+          <h3>Brake fluid exchange</h3>
+          <p class="svc-card__desc">Brake fluid absorbs water over time. We flush the old fluid out of every line and bleed the system.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$119</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 45 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Brake fluid exchange</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=brake-fluid">Book<span class="visually-hidden"> Brake fluid exchange</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Brake fluid absorbs water over time. We flush the old fluid out of every line and bleed the system.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Full flush with fresh fluid to your spec</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Every brake line bled</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pedal feel check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Moisture test results recorded</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Most manufacturers recommend this every two to three years.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-check-engine" data-id="check-engine" data-cat="diagnostics" data-cat-label="Diagnostics">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-engine"/></svg></span>
+            <span class="tag">Diagnostics</span>
+          </div>
+          <h3>Check engine light diagnosis</h3>
+          <p class="svc-card__desc">A code scan is only the start. We test until we find the actual cause, then explain it in plain English.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$129</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1 hour</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Check engine light diagnosis</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=check-engine">Book<span class="visually-hidden"> Check engine light diagnosis</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>A code scan is only the start. We test until we find the actual cause, then explain it in plain English.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Full scan of every control module</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Testing to pinpoint the cause</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Written findings with photos</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Itemized repair estimate</span></li></ul>
+            <h3>Good to know</h3>
+            <p>The diagnosis fee is credited to the repair if you approve it within 30 days.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-electrical" data-id="electrical" data-cat="diagnostics" data-cat-label="Diagnostics">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-engine"/></svg></span>
+            <span class="tag">Diagnostics</span>
+          </div>
+          <h3>Electrical diagnosis</h3>
+          <p class="svc-card__desc">Battery drains, no-starts, flickering lights and dead accessories, traced back to the source.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$149</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1 hour</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Electrical diagnosis</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=electrical">Book<span class="visually-hidden"> Electrical diagnosis</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Battery drains, no-starts, flickering lights and dead accessories, traced back to the source.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Battery and charging system tests</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Parasitic draw testing</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Circuit testing with factory wiring diagrams</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Written findings and estimate</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Intermittent faults can take longer to track down. We call you before going past the first hour.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-ac-check" data-id="ac-check" data-cat="diagnostics" data-cat-label="Diagnostics">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-engine"/></svg></span>
+            <span class="tag">Diagnostics</span>
+          </div>
+          <h3>A/C performance check</h3>
+          <p class="svc-card__desc">Vent temperature, system pressures and a leak check, plus a clear plan if it is not blowing cold.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$99</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 45 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: A/C performance check</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=ac-check">Book<span class="visually-hidden"> A/C performance check</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Vent temperature, system pressures and a leak check, plus a clear plan if it is not blowing cold.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Vent temperature and pressure readings</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Electronic leak check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Compressor and fan operation check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Recharge quote if needed</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Recharging is quoted separately because refrigerant type and amount vary by vehicle.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-pre-purchase" data-id="pre-purchase" data-cat="diagnostics" data-cat-label="Diagnostics">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-engine"/></svg></span>
+            <span class="tag">Diagnostics</span>
+          </div>
+          <h3>Pre-purchase inspection</h3>
+          <p class="svc-card__desc">An independent look at a used car before you buy, with a written report you can take back to the seller.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$149</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1.5 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Pre-purchase inspection</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=pre-purchase">Book<span class="visually-hidden"> Pre-purchase inspection</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>An independent look at a used car before you buy, with a written report you can take back to the seller.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test and full computer scan</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Underbody, brakes, tires and suspension</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Leak and previous accident repair check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Photo report with repair estimates</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Ask the seller not to warm the car up before you arrive. Some problems only show on a cold start.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-tire-rotation" data-id="tire-rotation" data-cat="tires" data-cat-label="Tires">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tire"/></svg></span>
+            <span class="tag">Tires</span>
+          </div>
+          <h3>Tire rotation</h3>
+          <p class="svc-card__desc">Moving tires between positions so they wear evenly and last longer, with a tread reading for each one.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$29</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 30 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Tire rotation</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=tire-rotation">Book<span class="visually-hidden"> Tire rotation</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Moving tires between positions so they wear evenly and last longer, with a tread reading for each one.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Rotation to your vehicle&#x27;s pattern</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Tread depth measured on all four</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pressures set, spare included</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Wheel nuts torqued to spec</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Free with a full synthetic oil change.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-mount-balance" data-id="mount-balance" data-cat="tires" data-cat-label="Tires">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tire"/></svg></span>
+            <span class="tag">Tires</span>
+          </div>
+          <h3>Tire mount and balance</h3>
+          <p class="svc-card__desc">New tires mounted and computer balanced, with new valve stems and the pressure sensors reset.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$99 <small>for four tires</small></dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1 hour</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Tire mount and balance</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=mount-balance">Book<span class="visually-hidden"> Tire mount and balance</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>New tires mounted and computer balanced, with new valve stems and the pressure sensors reset.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Mounting on all four wheels</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Computer wheel balancing</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>New rubber valve stems</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pressure sensor relearn</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Bring your own tires or ask us to quote a set. Old tire recycling is $4 per tire.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-alignment" data-id="alignment" data-cat="tires" data-cat-label="Tires">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tire"/></svg></span>
+            <span class="tag">Tires</span>
+          </div>
+          <h3>Four-wheel alignment</h3>
+          <p class="svc-card__desc">Steering and suspension angles set to factory spec, with a before and after printout you can keep.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$129</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1 hour</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Four-wheel alignment</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=alignment">Book<span class="visually-hidden"> Four-wheel alignment</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Steering and suspension angles set to factory spec, with a before and after printout you can keep.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Four-wheel alignment to factory spec</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Steering and suspension check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Before and after printout</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Worn suspension parts have to be replaced before an alignment will hold. We show you if that is the case.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-flat-repair" data-id="flat-repair" data-cat="tires" data-cat-label="Tires">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tire"/></svg></span>
+            <span class="tag">Tires</span>
+          </div>
+          <h3>Flat tire repair</h3>
+          <p class="svc-card__desc">A proper plug-patch repair from inside the tire, not just a plug pushed in from the outside.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$35</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 30 minutes</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Flat tire repair</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=flat-repair">Book<span class="visually-hidden"> Flat tire repair</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>A proper plug-patch repair from inside the tire, not just a plug pushed in from the outside.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Tire removed and inspected inside</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Plug-patch repair where it is safe</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Wheel rebalanced</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pressure check on all four tires</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Punctures in the sidewall or near the shoulder cannot be repaired safely. We show you why.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-hybrid-battery" data-id="hybrid-battery" data-cat="hybrid-ev" data-cat-label="Hybrid and EV">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+            <span class="tag">Hybrid and EV</span>
+          </div>
+          <h3>Hybrid battery health test</h3>
+          <p class="svc-card__desc">Module by module voltage and resistance testing, so you know how much life the hybrid battery has left.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$149</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1.5 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Hybrid battery health test</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=hybrid-battery">Book<span class="visually-hidden"> Hybrid battery health test</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Module by module voltage and resistance testing, so you know how much life the hybrid battery has left.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>High-voltage battery module testing</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Battery cooling fan and filter check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Fault code scan of hybrid systems</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Written health report</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Useful before buying a used hybrid, and the best way to plan a replacement instead of being surprised by one.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-ev-inspection" data-id="ev-inspection" data-cat="hybrid-ev" data-cat-label="Hybrid and EV">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+            <span class="tag">Hybrid and EV</span>
+          </div>
+          <h3>EV battery and systems inspection</h3>
+          <p class="svc-card__desc">State of health readout, thermal system check and a careful look at high-voltage cables and connectors.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$129</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1 hour</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: EV battery and systems inspection</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=ev-inspection">Book<span class="visually-hidden"> EV battery and systems inspection</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>State of health readout, thermal system check and a careful look at high-voltage cables and connectors.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Battery state of health readout</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Thermal management system check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>High-voltage cable and connector inspection</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Brake, tire and suspension wear check</span></li></ul>
+            <h3>Good to know</h3>
+            <p>EVs are heavy, so tires and suspension wear faster than many owners expect. This inspection covers both.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-ev-coolant" data-id="ev-coolant" data-cat="hybrid-ev" data-cat-label="Hybrid and EV">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+            <span class="tag">Hybrid and EV</span>
+          </div>
+          <h3>Battery coolant service</h3>
+          <p class="svc-card__desc">Drain and refill of the battery or inverter cooling loop, using the coolant your manufacturer specifies.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$189</dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 1.5 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Battery coolant service</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=ev-coolant">Book<span class="visually-hidden"> Battery coolant service</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Drain and refill of the battery or inverter cooling loop, using the coolant your manufacturer specifies.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Coolant drain and refill</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Air bled from the loop with the proper procedure</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pump operation check</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Leak inspection</span></li></ul>
+            <h3>Good to know</h3>
+            <p>Intervals vary widely by model. We check your schedule before recommending it.</p>
+          </div>
+        </li>
+        <li class="svc-card" id="svc-ev-brakes" data-id="ev-brakes" data-cat="hybrid-ev" data-cat-label="Hybrid and EV">
+          <div class="svc-card__top">
+            <span class="svc-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+            <span class="tag">Hybrid and EV</span>
+          </div>
+          <h3>Hybrid and EV brake service</h3>
+          <p class="svc-card__desc">Regenerative braking makes pads last longer, but calipers can seize from lack of use. We service them properly.</p>
+          <dl class="svc-card__meta">
+            <div><dt>Starting at</dt><dd class="price">$219 <small>per axle</small></dd></div>
+            <div><dt>Typical time</dt><dd class="duration"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>About 2 hours</dd></div>
+          </dl>
+          <div class="svc-card__actions">
+            <button type="button" class="btn btn--outline btn--sm" data-details aria-haspopup="dialog">Details<span class="visually-hidden">: Hybrid and EV brake service</span></button>
+            <a class="btn btn--dark btn--sm" href="book.html?service=ev-brakes">Book<span class="visually-hidden"> Hybrid and EV brake service</span></a>
+          </div>
+          <div class="svc-details" hidden>
+            <p>Regenerative braking makes pads last longer, but calipers can seize from lack of use. We service them properly.</p>
+            <h3>What is included</h3>
+            <ul class="check-list"><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Calipers cleaned, lubricated and freed up</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Pad and rotor measurement and cleanup</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Brake service mode used where required</span></li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span>Road test</span></li></ul>
+            <h3>Good to know</h3>
+            <p>If pads or rotors are worn we quote replacement before doing it.</p>
+          </div>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Squarespace: Section with three text blocks -->
+<section class="section theme-paper" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">How pricing works</p>
+      <h2 id="pricing-title">No surprises on the invoice</h2>
+    </div>
+    <div class="price-notes">
+      <div class="price-note">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-list"/></svg>
+        <h3>Starting-at prices</h3>
+        <p>Each price covers the job on most cars and light trucks with standard parts. Larger vehicles, premium parts or extra labor raise it, and we tell you before any work starts.</p>
+      </div>
+      <div class="price-note">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-message"/></svg>
+        <h3>Estimates by text</h3>
+        <p>After the inspection you get an itemized estimate with photos and approve it line by line. If we find something new mid-repair, we stop and ask.</p>
+      </div>
+      <div class="price-note">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-card"/></svg>
+        <h3>Diagnosis credit</h3>
+        <p>Diagnosis fees are credited to the repair when you approve it within 30 days. Prices on this concept site are sample figures for a fictional shop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Squarespace: call to action band -->
+<section class="section cta theme-orange" aria-labelledby="cta-title">
+  <div class="container cta__inner">
+    <div>
+      <h2 id="cta-title">Not sure what you need?</h2>
+      <p>Book a diagnosis and tell us what you are noticing. You get the findings and an estimate before any repair.</p>
+    </div>
+    <a class="btn btn--dark" href="book.html?service=check-engine">Book a diagnosis<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- Service details dialog, opened by the Details buttons. Native <dialog> plus app.js:
+     Esc closes, Tab stays inside, focus returns to the button that opened it. -->
+<dialog class="modal" id="svc-dialog" aria-labelledby="dlg-title">
+  <div class="modal__inner">
+    <button type="button" class="modal__close" data-close><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg><span class="visually-hidden">Close details</span></button>
+    <p class="eyebrow" id="dlg-cat">Service</p>
+    <h2 id="dlg-title">Service details</h2>
+    <dl class="modal__price" id="dlg-price"></dl>
+    <div class="modal__body" id="dlg-body"></div>
+    <div class="modal__actions">
+      <a class="btn btn--primary" id="dlg-book" href="book.html">Book this service<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+      <button type="button" class="btn btn--outline" data-close>Close</button>
+    </div>
+  </div>
+</dialog>
+</main>
+<!-- Squarespace: Footer (text blocks, navigation links, Newsletter block, social links) -->
+<footer class="site-footer">
+  <div class="hazard" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 2.5 42.6 13.25v21.5L24 45.5 5.4 34.75v-21.5z" fill="#FF6B1A" stroke="#FF6B1A" stroke-width="3" stroke-linejoin="round"/><path d="M15 13h5.4v8.6l7-8.6h6.4L25 23.6 34.2 35h-6.6l-7.2-9.2V35H15z" fill="#111417"/></svg>
+        <span class="brand__text"><span class="brand__name">Keelson</span><span class="brand__tag">Auto Care</span><span class="visually-hidden">, home</span></span>
+      </a>
+      <p>Independent repair and maintenance for cars, light trucks, hybrids and EVs. Clear estimates, photos of what we find, and nothing done without your OK.</p>
+      <ul class="social" aria-label="Social media (placeholder links)">
+        <li><a href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg><span class="visually-hidden">Facebook (placeholder link)</span></a></li>
+        <li><a href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg><span class="visually-hidden">Instagram (placeholder link)</span></a></li>
+        <li><a href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-youtube"/></svg><span class="visually-hidden">YouTube (placeholder link)</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h2 class="footer-h">Visit</h2>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>123 Example Street<br>Harbor District</span></p>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg><span><span class="nowrap">Mon to Fri 7:30 AM to 6:00 PM</span><br><span class="nowrap">Sat 8:00 AM to 2:00 PM</span><br>Sun closed</span></p>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span>+1 (555) 0100</span></p>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span>hello@keelson.example</span></p>
+    </div>
+    <div>
+      <h2 class="footer-h">Explore</h2>
+      <ul class="footer-links">
+        <li><a href="services.html">Services and prices</a></li>
+        <li><a href="book.html">Book a service</a></li>
+        <li><a href="about.html">About the shop</a></li>
+        <li><a href="about.html#warranty">Warranty</a></li>
+        <li><a href="about.html#policies">Shop policies</a></li>
+        <li><a href="redesign-notes.html">Redesign notes</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h2 class="footer-h">Maintenance reminders</h2>
+      <p>One short email a season with service reminders and shop news. No spam, unsubscribe any time.</p>
+      <form class="newsletter-form" novalidate>
+        <label for="nl-email">Email address</label>
+        <div class="nl-row">
+          <input type="email" id="nl-email" name="email" autocomplete="email" required aria-describedby="nl-msg">
+          <button class="btn btn--primary" type="submit" disabled>Sign up</button>
+        </div>
+        <p class="nl-msg" id="nl-msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p class="disclosure">Concept site by Emmanuel O. for portfolio purposes. Keelson Auto Care is a fictional business. Front-end prototype of a Squarespace 7.1 layout; forms and bookings are demos and send no data.</p>
+      <ul class="legal-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a service | Keelson Auto Care</title>
+<meta name="description" content="Book maintenance, brakes, diagnostics, tires or hybrid and EV service in five short steps, with a running starting estimate. Demo booking form on a concept site: nothing is sent.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keelson Auto Care (concept)">
+<meta property="og:title" content="Book a service | Keelson Auto Care">
+<meta property="og:description" content="A five-step booking flow: vehicle, services, date and time, contact, review. Squarespace 7.1 concept with a fictional brand; the form is a demo.">
+<meta name="theme-color" content="#111417">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><symbol id="i-wrench" viewBox="0 0 24 24"><path transform="rotate(45 12 12)" d="M10 2.4V5.6h4V2.4A4.4 4.4 0 0 1 13.5 10.46V19.5a1.5 1.5 0 0 1-3 0V10.46A4.4 4.4 0 0 1 10 2.4z"/></symbol><symbol id="i-oil" viewBox="0 0 24 24"><path d="M3.5 11H13l7.6-2.6.6 1.8-7.6 5V19.5H3.5z"/><path d="M6.5 11V8.5h4V11"/><path d="M20.4 13.6c.5.8 1 1.5 1 2a1 1 0 0 1-2 0c0-.5.5-1.2 1-2z"/></symbol><symbol id="i-brake" viewBox="0 0 24 24"><circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="2.6"/><path d="M11 8.4v.01M15.6 13h.01M11 17.6v.01M6.4 13h.01" stroke-width="2.2"/><path d="M12.79 2.86A10.3 10.3 0 0 1 20.68 9.48L17.2 10.74A6.6 6.6 0 0 0 12.15 6.5z" fill="currentColor"/></symbol><symbol id="i-engine" viewBox="0 0 24 24"><path d="M5 10.5h2l1.5-2h7l2 2H19V9h2v8h-2v-1.5h-1.5L15 18H7.5l-2-2H5z"/><path d="M12 8.5V6M9.5 6h5M2.5 10.5v5M2.5 13H5"/></symbol><symbol id="i-tire" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.4"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.64 5.64l1.55 1.55M16.81 16.81l1.55 1.55M5.64 18.36l1.55-1.55M16.81 7.19l1.55-1.55"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><rect x="2.5" y="7" width="16.5" height="10.5" rx="2"/><path d="M19 10.3h1.4a1 1 0 0 1 1 1v1.9a1 1 0 0 1-1 1H19"/><path d="M11.8 8.8 8.4 12.9h3l-.9 3.1 3.6-4.4h-3z" fill="currentColor" stroke-width="1.2"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4M9 14.6l2 2 4-4"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 5.8v5.6c0 4.4-2.9 7.9-7 9.6-4.1-1.7-7-5.2-7-9.6V5.8z"/><path d="m9 12 2.2 2.2L15.4 10"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.9l1.5 4.4-2.1 1.5a10.6 10.6 0 0 0 5.7 5.7l1.5-2.1 4.4 1.5v2.9a2 2 0 0 1-2 2C11.6 19.4 4.6 12.4 4.6 5.5a2 2 0 0 1 2-2z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.2s-6.6-5.9-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.2-6.6 11.1-6.6 11.1z"/><circle cx="12" cy="10.1" r="2.4"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.8 6.8 8.2 6.4 8.2-6.4"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol><symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="m8.5 7 1.6-2.5h3.8L15.5 7"/><circle cx="12" cy="13.5" r="3.6"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M4.5 5h15A1.5 1.5 0 0 1 21 6.5v9a1.5 1.5 0 0 1-1.5 1.5H11l-4.5 3.5V17h-2A1.5 1.5 0 0 1 3 15.5v-9A1.5 1.5 0 0 1 4.5 5z"/><path d="M7.5 9.5h9M7.5 12.5h6"/></symbol><symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><rect x="9" y="3" width="6" height="3.2" rx="1"/><path d="m8.6 12.4 1.8 1.8 3.4-3.4M8.6 17.5h6.8"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="12" r="4"/><path d="M11.5 12H21M18 12v3M15.2 12v2.2"/></symbol><symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4.5 9.5h11V14a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M15.5 11h1.3a2.5 2.5 0 0 1 0 5h-1.6M8 3.5c-.8 1 .8 2 0 3M11.5 3.5c-.8 1 .8 2 0 3"/></symbol><symbol id="i-car" viewBox="0 0 24 24"><path d="M3.2 15.6v-2.4c0-.7.4-1.2 1.1-1.4l2.4-.6 2.1-3.3a2 2 0 0 1 1.7-.9h4.4a2 2 0 0 1 1.6.8l2.6 3.3 1.8.4c.7.2 1.1.7 1.1 1.4v2.4c0 .5-.4.9-.9.9h-.8"/><path d="M9.6 16.5h4.8M5.4 16.5H4.1a.9.9 0 0 1-.9-.9M6.8 11.2h11.6"/><circle cx="7.5" cy="16.5" r="2"/><circle cx="16.5" cy="16.5" r="2"/></symbol><symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.3 17.5a8.5 8.5 0 1 1 15.4 0"/><path d="m12 14 3.6-4.2"/><circle cx="12" cy="14.4" r="1.3"/><path d="M7.4 9.3l.9.8M12 6.6v1.2M16.6 9.3l-.9.8"/></symbol><symbol id="i-parts" viewBox="0 0 24 24"><path d="M12 3.5 19.4 7.8v8.4L12 20.5l-7.4-4.3V7.8z"/><circle cx="12" cy="12" r="3.3"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5M12 14.5v2"/></symbol><symbol id="i-card" viewBox="0 0 24 24"><rect x="2.8" y="5.5" width="18.4" height="13" rx="2"/><path d="M2.8 9.5h18.4M6.5 14.8h4"/></symbol><symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><path d="M4.5 6.5h.01M4.5 12h.01M4.5 17.5h.01" stroke-width="2.6"/></symbol><symbol id="i-layout" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M3.5 9h17M10 9v11"/></symbol><symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.2"/><path d="M10.8 17.6h2.4"/></symbol><symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="1.8"/><path d="M5 8.6c2.4.8 4.6 1.2 7 1.2s4.6-.4 7-1.2M12 9.8v4.4M12 14.2l-3.2 6.3M12 14.2l3.2 6.3"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M6.5 3h7.6L18 6.9V20a1 1 0 0 1-1 1H6.5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M13.5 3v4.2H18M8.6 11.5h6.8M8.6 14.8h6.8M8.6 18h4"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19.5 12h-15M10.5 6l-6 6 6 6"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.4v.1"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></symbol><symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4.2L19 9.2a2.1 2.1 0 0 0-3-3L5.2 17v3z"/><path d="m14.2 8 1.8 1.8"/></symbol><symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.6 21v-7.3H16l.4-2.9h-2.8V9.1c0-.8.3-1.4 1.4-1.4h1.5V5.2c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7v2.1H8.4v2.9h2.4V21z" fill="currentColor" stroke="none"/></symbol><symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></symbol><symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.2 9.2 5 2.8-5 2.8z" fill="currentColor"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to main content</a>
+<!-- Squarespace: Announcement Bar -->
+<section class="announcement" aria-label="Announcement">
+  <div class="container announcement__inner">
+    <p><strong>Same-week appointments</strong><span class="announcement__more"> for maintenance, brakes and hybrid service</span>.</p>
+    <a href="book.html">Book online in about two minutes</a>
+  </div>
+</section>
+<!-- Squarespace: Site Header (logo, navigation, header button; mobile burger menu) -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 2.5 42.6 13.25v21.5L24 45.5 5.4 34.75v-21.5z" fill="#FF6B1A" stroke="#FF6B1A" stroke-width="3" stroke-linejoin="round"/><path d="M15 13h5.4v8.6l7-8.6h6.4L25 23.6 34.2 35h-6.6l-7.2-9.2V35H15z" fill="#111417"/></svg>
+      <span class="brand__text"><span class="brand__name">Keelson</span><span class="brand__tag">Auto Care</span><span class="visually-hidden">, home</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="about.html#process">What to expect</a></li>
+<li><a href="redesign-notes.html">Redesign notes</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <p class="site-header__phone"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span><span class="visually-hidden">Call </span>+1 (555) 0100</span></p>
+      <a class="btn btn--primary btn--sm header-book" href="book.html" aria-current="page"><span>Book<span class="long"> a service</span></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon icon-open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="container mobile-menu__inner">
+      <nav aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a href="index.html">Home<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="services.html">Services and prices<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="book.html" aria-current="page">Book a service<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="about.html">About the shop<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="about.html#process">What to expect<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="about.html#warranty">Warranty<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+<li><a href="redesign-notes.html">Redesign notes<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__meta">
+        <p><strong>+1 (555) 0100</strong></p>
+        <p>123 Example Street, Harbor District</p>
+        <p>Mon to Fri 7:30 AM to 6:00 PM, Sat 8:00 AM to 2:00 PM</p>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<!-- Squarespace: Page banner section (dark color theme) -->
+<section class="page-hero theme-dark" aria-labelledby="page-title">
+  <div class="container">
+    <svg class="icon page-hero__glyph" aria-hidden="true" focusable="false"><use href="#i-calendar"/></svg>
+    <p class="eyebrow">Online booking</p>
+    <h1 id="page-title">Book a service</h1>
+    <p class="lead">Five short steps, about two minutes. You see a starting estimate as you go. Prefer the phone? Call <span class="nowrap">+1 (555) 0100</span>.</p>
+    <ul class="page-hero__meta">
+      <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calendar"/></svg>Same-week appointments</li>
+      <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-key"/></svg>Wait or drop off</li>
+      <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg>Demo form: nothing is sent</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Squarespace: in production this is an Acuity Scheduling block. Each service is an
+     appointment type and the vehicle questions are intake form fields. This prototype shows
+     the intended flow: progress indicator, validation, Back and Next, review, confirmation. -->
+<section class="section theme-light section--tight" aria-label="Booking form">
+  <div class="container">
+    <noscript>
+      <div class="notice"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><p>Online booking needs JavaScript. Call <span class="nowrap">+1 (555) 0100</span> and we will book you in.</p></div>
+    </noscript>
+    <div class="booking">
+      <div class="booking-card" id="booking-card">
+        <div class="stepper-wrap">
+          <ol class="stepper" aria-label="Booking progress">
+            <li class="is-current" aria-current="step"><span class="stepper__bar" aria-hidden="true"></span><span class="stepper__label"><span class="stepper__num" aria-hidden="true">1</span>Vehicle<span class="stepper__state visually-hidden"></span></span></li>
+            <li><span class="stepper__bar" aria-hidden="true"></span><span class="stepper__label"><span class="stepper__num" aria-hidden="true">2</span>Services<span class="stepper__state visually-hidden"></span></span></li>
+            <li><span class="stepper__bar" aria-hidden="true"></span><span class="stepper__label"><span class="stepper__num" aria-hidden="true">3</span>Date and time<span class="stepper__state visually-hidden"></span></span></li>
+            <li><span class="stepper__bar" aria-hidden="true"></span><span class="stepper__label"><span class="stepper__num" aria-hidden="true">4</span>Contact<span class="stepper__state visually-hidden"></span></span></li>
+            <li><span class="stepper__bar" aria-hidden="true"></span><span class="stepper__label"><span class="stepper__num" aria-hidden="true">5</span>Review<span class="stepper__state visually-hidden"></span></span></li>
+          </ol>
+        </div>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <!-- Error summary: filled by app.js, focused when a step has problems -->
+          <div class="error-summary" id="error-summary" tabindex="-1" aria-labelledby="error-summary-title" hidden>
+            <h3 id="error-summary-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg">There is a problem</span></h3>
+            <ul></ul>
+          </div>
+
+          <!-- Step 1: vehicle. data-fields lists the answers checked before moving on. -->
+          <section class="step" data-name="Vehicle" data-fields="year make model mileage powertrain" aria-labelledby="step-1-title">
+            <div class="step__head">
+              <h2 id="step-1-title" tabindex="-1"><span class="step__count">Step 1 of 5</span>Your vehicle</h2>
+              <p>So we can check parts and prices before you arrive. Every field is required unless it says optional.</p>
+            </div>
+            <div class="fields fields--2">
+              <div class="field" data-field="year">
+                <label for="f-year">Model year</label>
+                <select id="f-year" name="year" required aria-describedby="err-year">
+                  <option value="">Choose a year</option>
+                  <option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989 or older">1989 or older</option>
+                </select>
+                <p class="field-error" id="err-year" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+              <div class="field" data-field="make">
+                <label for="f-make">Make</label>
+                <select id="f-make" name="make" required aria-describedby="err-make">
+                  <option value="">Choose a make</option>
+                  <option value="Acura">Acura</option><option value="Audi">Audi</option><option value="BMW">BMW</option><option value="Buick">Buick</option><option value="Cadillac">Cadillac</option><option value="Chevrolet">Chevrolet</option><option value="Chrysler">Chrysler</option><option value="Dodge">Dodge</option><option value="Ford">Ford</option><option value="Genesis">Genesis</option><option value="GMC">GMC</option><option value="Honda">Honda</option><option value="Hyundai">Hyundai</option><option value="Infiniti">Infiniti</option><option value="Jeep">Jeep</option><option value="Kia">Kia</option><option value="Lexus">Lexus</option><option value="Lincoln">Lincoln</option><option value="Mazda">Mazda</option><option value="Mercedes-Benz">Mercedes-Benz</option><option value="Mini">Mini</option><option value="Mitsubishi">Mitsubishi</option><option value="Nissan">Nissan</option><option value="Polestar">Polestar</option><option value="Porsche">Porsche</option><option value="Ram">Ram</option><option value="Rivian">Rivian</option><option value="Subaru">Subaru</option><option value="Tesla">Tesla</option><option value="Toyota">Toyota</option><option value="Volkswagen">Volkswagen</option><option value="Volvo">Volvo</option><option value="Other">Other</option>
+                </select>
+                <p class="field-error" id="err-make" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+              <div class="field" data-field="model">
+                <label for="f-model">Model</label>
+                <input type="text" id="f-model" name="model" required maxlength="40" autocomplete="off" aria-describedby="hint-model err-model">
+                <p class="hint" id="hint-model">As written on the back of the car, for example Outback.</p>
+                <p class="field-error" id="err-model" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+              <div class="field" data-field="mileage">
+                <label for="f-mileage">Mileage</label>
+                <input type="text" id="f-mileage" name="mileage" required inputmode="numeric" maxlength="9" autocomplete="off" aria-describedby="hint-mileage err-mileage">
+                <p class="hint" id="hint-mileage">A rough number from the dashboard is fine.</p>
+                <p class="field-error" id="err-mileage" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+            </div>
+            <fieldset class="field" data-field="powertrain" aria-describedby="err-powertrain">
+              <legend class="legend">What powers it?</legend>
+              <p class="field-error" id="err-powertrain" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              <div class="choices choices--4">
+                <label class="choice"><input type="radio" name="powertrain" id="pt-gas" value="gas" data-label="Gas" required><span class="choice__title">Gas</span></label>
+                <label class="choice"><input type="radio" name="powertrain" id="pt-diesel" value="diesel" data-label="Diesel"><span class="choice__title">Diesel</span></label>
+                <label class="choice"><input type="radio" name="powertrain" id="pt-hybrid" value="hybrid" data-label="Hybrid or plug-in hybrid"><span><span class="choice__title">Hybrid</span><span class="choice__meta">Including plug-in</span></span></label>
+                <label class="choice"><input type="radio" name="powertrain" id="pt-ev" value="ev" data-label="Electric"><span class="choice__title">Electric</span></label>
+              </div>
+            </fieldset>
+          </section>
+
+          <!-- Step 2: services (checkbox tiles grouped by category) -->
+          <section class="step" data-name="Services" data-fields="services" aria-labelledby="step-2-title" hidden>
+            <div class="step__head">
+              <h2 id="step-2-title" tabindex="-1"><span class="step__count">Step 2 of 5</span>Choose services</h2>
+              <p>Pick everything you would like done. Prices are starting points, and you approve the final estimate.</p>
+            </div>
+            <div class="service-picker" data-field="services">
+              <p class="field-error" id="err-services" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              <fieldset class="service-group"><legend class="legend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-oil"/></svg>Maintenance</legend><div class="choices choices--2"><label class="choice"><input type="checkbox" name="services" id="svc-synthetic-oil-cb" value="synthetic-oil" data-name="Full synthetic oil change" data-price="79" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Full synthetic oil change</span><span class="choice__meta">From <b>$79</b> · about 45 minutes</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-scheduled-maintenance-cb" value="scheduled-maintenance" data-name="Factory scheduled maintenance" data-price="189" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Factory scheduled maintenance</span><span class="choice__meta">From <b>$189</b> · about 2 hours</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-battery-cb" value="battery" data-name="12V battery test and replacement" data-price="189" data-unit="" aria-describedby="err-services"><span><span class="choice__title">12V battery test and replacement</span><span class="choice__meta">From <b>$189</b> · about 30 minutes</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-coolant-cb" value="coolant" data-name="Coolant exchange" data-price="149" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Coolant exchange</span><span class="choice__meta">From <b>$149</b> · about 1 hour</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-transmission-fluid-cb" value="transmission-fluid" data-name="Transmission fluid service" data-price="199" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Transmission fluid service</span><span class="choice__meta">From <b>$199</b> · about 1.5 hours</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-filters-cb" value="filters" data-name="Engine and cabin air filters" data-price="59" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Engine and cabin air filters</span><span class="choice__meta">From <b>$59</b> · about 20 minutes</span></span></label></div></fieldset>
+<fieldset class="service-group"><legend class="legend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brake"/></svg>Brakes</legend><div class="choices choices--2"><label class="choice"><input type="checkbox" name="services" id="svc-brake-inspection-cb" value="brake-inspection" data-name="Brake inspection" data-price="39" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Brake inspection</span><span class="choice__meta">From <b>$39</b> · about 30 minutes</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-brake-pads-cb" value="brake-pads" data-name="Brake pad replacement" data-price="189" data-unit="per axle" aria-describedby="err-services"><span><span class="choice__title">Brake pad replacement</span><span class="choice__meta">From <b>$189</b> per axle · about 1.5 hours</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-pads-rotors-cb" value="pads-rotors" data-name="Pads and rotors" data-price="389" data-unit="per axle" aria-describedby="err-services"><span><span class="choice__title">Pads and rotors</span><span class="choice__meta">From <b>$389</b> per axle · about 2 hours</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-brake-fluid-cb" value="brake-fluid" data-name="Brake fluid exchange" data-price="119" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Brake fluid exchange</span><span class="choice__meta">From <b>$119</b> · about 45 minutes</span></span></label></div></fieldset>
+<fieldset class="service-group"><legend class="legend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-engine"/></svg>Diagnostics</legend><div class="choices choices--2"><label class="choice"><input type="checkbox" name="services" id="svc-check-engine-cb" value="check-engine" data-name="Check engine light diagnosis" data-price="129" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Check engine light diagnosis</span><span class="choice__meta">From <b>$129</b> · about 1 hour</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-electrical-cb" value="electrical" data-name="Electrical diagnosis" data-price="149" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Electrical diagnosis</span><span class="choice__meta">From <b>$149</b> · about 1 hour</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-ac-check-cb" value="ac-check" data-name="A/C performance check" data-price="99" data-unit="" aria-describedby="err-services"><span><span class="choice__title">A/C performance check</span><span class="choice__meta">From <b>$99</b> · about 45 minutes</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-pre-purchase-cb" value="pre-purchase" data-name="Pre-purchase inspection" data-price="149" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Pre-purchase inspection</span><span class="choice__meta">From <b>$149</b> · about 1.5 hours</span></span></label></div></fieldset>
+<fieldset class="service-group"><legend class="legend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tire"/></svg>Tires</legend><div class="choices choices--2"><label class="choice"><input type="checkbox" name="services" id="svc-tire-rotation-cb" value="tire-rotation" data-name="Tire rotation" data-price="29" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Tire rotation</span><span class="choice__meta">From <b>$29</b> · about 30 minutes</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-mount-balance-cb" value="mount-balance" data-name="Tire mount and balance" data-price="99" data-unit="for four tires" aria-describedby="err-services"><span><span class="choice__title">Tire mount and balance</span><span class="choice__meta">From <b>$99</b> for four tires · about 1 hour</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-alignment-cb" value="alignment" data-name="Four-wheel alignment" data-price="129" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Four-wheel alignment</span><span class="choice__meta">From <b>$129</b> · about 1 hour</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-flat-repair-cb" value="flat-repair" data-name="Flat tire repair" data-price="35" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Flat tire repair</span><span class="choice__meta">From <b>$35</b> · about 30 minutes</span></span></label></div></fieldset>
+<fieldset class="service-group"><legend class="legend"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg>Hybrid and EV</legend><div class="choices choices--2"><label class="choice"><input type="checkbox" name="services" id="svc-hybrid-battery-cb" value="hybrid-battery" data-name="Hybrid battery health test" data-price="149" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Hybrid battery health test</span><span class="choice__meta">From <b>$149</b> · about 1.5 hours</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-ev-inspection-cb" value="ev-inspection" data-name="EV battery and systems inspection" data-price="129" data-unit="" aria-describedby="err-services"><span><span class="choice__title">EV battery and systems inspection</span><span class="choice__meta">From <b>$129</b> · about 1 hour</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-ev-coolant-cb" value="ev-coolant" data-name="Battery coolant service" data-price="189" data-unit="" aria-describedby="err-services"><span><span class="choice__title">Battery coolant service</span><span class="choice__meta">From <b>$189</b> · about 1.5 hours</span></span></label><label class="choice"><input type="checkbox" name="services" id="svc-ev-brakes-cb" value="ev-brakes" data-name="Hybrid and EV brake service" data-price="219" data-unit="per axle" aria-describedby="err-services"><span><span class="choice__title">Hybrid and EV brake service</span><span class="choice__meta">From <b>$219</b> per axle · about 2 hours</span></span></label></div></fieldset>
+            </div>
+            <div class="field">
+              <label for="f-notes">Anything we should know? <span class="opt">(optional)</span></label>
+              <textarea id="f-notes" name="notes" maxlength="500" aria-describedby="hint-notes"></textarea>
+              <p class="hint" id="hint-notes">Noises, warning lights, when it happens. Up to 500 characters.</p>
+            </div>
+            <p class="mini-total" id="mini-total" aria-live="polite">No services selected yet</p>
+          </section>
+
+          <!-- Step 3: wait or drop off, then day and time (days and slots are generated by app.js) -->
+          <section class="step" data-name="Date and time" data-fields="visit day time" aria-labelledby="step-3-title" hidden>
+            <div class="step__head">
+              <h2 id="step-3-title" tabindex="-1"><span class="step__count">Step 3 of 5</span>Pick a day and time</h2>
+              <p>Times are arrival times. We are open Monday to Friday 7:30 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM.</p>
+            </div>
+            <fieldset class="field" data-field="visit" aria-describedby="err-visit">
+              <legend class="legend">Will you wait or drop the car off?</legend>
+              <p class="field-error" id="err-visit" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              <div class="choices choices--2">
+                <label class="choice"><input type="radio" name="visit" id="visit-wait" value="wait" data-label="Waiting at the shop" required><span><span class="choice__title">Wait at the shop</span><span class="choice__meta">Best for jobs under 90 minutes. Lounge with Wi-Fi and coffee.</span></span></label>
+                <label class="choice"><input type="radio" name="visit" id="visit-drop" value="drop" data-label="Dropping the car off"><span><span class="choice__title">Drop off the car</span><span class="choice__meta">We text you when it is ready. Free ride within 5 miles.</span></span></label>
+              </div>
+            </fieldset>
+            <fieldset class="field" data-field="day" aria-describedby="err-day">
+              <legend class="legend">Day</legend>
+              <p class="field-error" id="err-day" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              <div class="chips" id="day-options"></div>
+            </fieldset>
+            <fieldset class="field" data-field="time" aria-describedby="err-time">
+              <legend class="legend">Arrival time</legend>
+              <p class="field-error" id="err-time" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              <div id="time-options"></div>
+            </fieldset>
+          </section>
+
+          <!-- Step 4: contact details -->
+          <section class="step" data-name="Contact" data-fields="first_name last_name phone email" aria-labelledby="step-4-title" hidden>
+            <div class="step__head">
+              <h2 id="step-4-title" tabindex="-1"><span class="step__count">Step 4 of 5</span>Your details</h2>
+              <p>We only use these for this appointment and its follow-up.</p>
+            </div>
+            <div class="fields fields--2">
+              <div class="field" data-field="first_name">
+                <label for="f-first">First name</label>
+                <input type="text" id="f-first" name="first_name" required autocomplete="given-name" maxlength="60" aria-describedby="err-first_name">
+                <p class="field-error" id="err-first_name" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+              <div class="field" data-field="last_name">
+                <label for="f-last">Last name</label>
+                <input type="text" id="f-last" name="last_name" required autocomplete="family-name" maxlength="60" aria-describedby="err-last_name">
+                <p class="field-error" id="err-last_name" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+              <div class="field" data-field="phone">
+                <label for="f-phone">Mobile number</label>
+                <input type="tel" id="f-phone" name="phone" required autocomplete="tel" maxlength="20" aria-describedby="hint-phone err-phone">
+                <p class="hint" id="hint-phone">For your confirmation and the inspection report.</p>
+                <p class="field-error" id="err-phone" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+              <div class="field" data-field="email">
+                <label for="f-email">Email</label>
+                <input type="email" id="f-email" name="email" required autocomplete="email" maxlength="120" spellcheck="false" aria-describedby="hint-email err-email">
+                <p class="hint" id="hint-email">For your receipt and service record.</p>
+                <p class="field-error" id="err-email" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span class="msg"></span></p>
+              </div>
+            </div>
+            <fieldset class="field">
+              <legend class="legend">How should we send updates?</legend>
+              <div class="choices choices--3">
+                <label class="choice"><input type="radio" name="updates" id="up-text" value="text" data-label="Text message" checked><span class="choice__title">Text message</span></label>
+                <label class="choice"><input type="radio" name="updates" id="up-email" value="email" data-label="Email"><span class="choice__title">Email</span></label>
+                <label class="choice"><input type="radio" name="updates" id="up-call" value="call" data-label="Phone call"><span class="choice__title">Phone call</span></label>
+              </div>
+            </fieldset>
+            <label class="choice choice--single"><input type="checkbox" name="reminders" id="f-reminders" value="yes"><span><span class="choice__title">Text me a reminder the day before <span class="opt">(optional)</span></span><span class="choice__meta">Message and data rates may apply. Reply STOP to opt out. On this demo no messages are sent.</span></span></label>
+            <p class="hint consent">See our <a href="privacy.html">privacy policy</a> for how booking details are handled.</p>
+          </section>
+
+          <!-- Step 5: review with Edit links back to each step -->
+          <section class="step" data-name="Review" aria-labelledby="step-5-title" hidden>
+            <div class="step__head">
+              <h2 id="step-5-title" tabindex="-1"><span class="step__count">Step 5 of 5</span>Review and confirm</h2>
+              <p>Check the details below. You can edit any section before confirming.</p>
+            </div>
+            <div class="review" id="review"></div>
+            <div class="demo-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg><p><strong>Demo booking.</strong> Confirming shows a sample confirmation on this page. Nothing is sent, stored or booked.</p></div>
+          </section>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn--outline" id="btn-back" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"/></svg>Back</button>
+            <div class="form-nav__right">
+              <button type="submit" class="btn btn--primary" id="btn-next" disabled><span class="btn-label">Next: Services</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Demo confirmation, shown after the review step -->
+      <div class="booking-card done" id="booking-done" hidden>
+        <div class="done__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></div>
+        <h2 id="done-title" tabindex="-1">Thanks, <span id="done-name"></span>. Demo booking complete.</h2>
+        <p class="done__when" id="done-when"></p>
+        <p class="done__ref">Reference <span id="done-ref"></span></p>
+        <div class="demo-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg><p><strong>This was a demo.</strong> Nothing was sent and no appointment was made. On the live site this request would go to the shop's scheduling system, and you would get a confirmation by text and email.</p></div>
+        <div class="btn-row">
+          <button type="button" class="btn btn--primary" id="btn-restart">Start a new booking</button>
+          <a class="btn btn--outline" href="index.html">Back to home</a>
+        </div>
+      </div>
+
+      <aside class="booking-aside" aria-labelledby="sum-title">
+        <div class="visit-summary">
+          <h2 id="sum-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clipboard"/></svg>Your visit</h2>
+          <dl>
+            <dt>Vehicle</dt>
+            <dd id="sum-vehicle" class="empty">Not added yet</dd>
+            <dt>Services</dt>
+            <dd id="sum-services"><span class="empty">None chosen yet</span></dd>
+            <dt>When</dt>
+            <dd id="sum-when" class="empty">Not chosen yet</dd>
+          </dl>
+          <div class="visit-summary__total"><span>Starting estimate</span><strong id="sum-total">$0</strong></div>
+          <p class="visit-summary__fine">Starting prices for most vehicles, one axle where priced per axle. Your final estimate comes after inspection, and nothing is done without your approval.</p>
+        </div>
+        <div class="side-help">
+          <h2>Rather talk to a person?</h2>
+          <p>Call the service desk, Monday to Saturday.</p>
+          <p class="phone-line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span class="nowrap">+1 (555) 0100</span></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+<!-- Squarespace: Footer (text blocks, navigation links, Newsletter block, social links) -->
+<footer class="site-footer">
+  <div class="hazard" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 2.5 42.6 13.25v21.5L24 45.5 5.4 34.75v-21.5z" fill="#FF6B1A" stroke="#FF6B1A" stroke-width="3" stroke-linejoin="round"/><path d="M15 13h5.4v8.6l7-8.6h6.4L25 23.6 34.2 35h-6.6l-7.2-9.2V35H15z" fill="#111417"/></svg>
+        <span class="brand__text"><span class="brand__name">Keelson</span><span class="brand__tag">Auto Care</span><span class="visually-hidden">, home</span></span>
+      </a>
+      <p>Independent repair and maintenance for cars, light trucks, hybrids and EVs. Clear estimates, photos of what we find, and nothing done without your OK.</p>
+      <ul class="social" aria-label="Social media (placeholder links)">
+        <li><a href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg><span class="visually-hidden">Facebook (placeholder link)</span></a></li>
+        <li><a href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg><span class="visually-hidden">Instagram (placeholder link)</span></a></li>
+        <li><a href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-youtube"/></svg><span class="visually-hidden">YouTube (placeholder link)</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h2 class="footer-h">Visit</h2>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>123 Example Street<br>Harbor District</span></p>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg><span><span class="nowrap">Mon to Fri 7:30 AM to 6:00 PM</span><br><span class="nowrap">Sat 8:00 AM to 2:00 PM</span><br>Sun closed</span></p>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span>+1 (555) 0100</span></p>
+      <p class="line"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span>hello@keelson.example</span></p>
+    </div>
+    <div>
+      <h2 class="footer-h">Explore</h2>
+      <ul class="footer-links">
+        <li><a href="services.html">Services and prices</a></li>
+        <li><a href="book.html">Book a service</a></li>
+        <li><a href="about.html">About the shop</a></li>
+        <li><a href="about.html#warranty">Warranty</a></li>
+        <li><a href="about.html#policies">Shop policies</a></li>
+        <li><a href="redesign-notes.html">Redesign notes</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h2 class="footer-h">Maintenance reminders</h2>
+      <p>One short email a season with service reminders and shop news. No spam, unsubscribe any time.</p>
+      <form class="newsletter-form" novalidate>
+        <label for="nl-email">Email address</label>
+        <div class="nl-row">
+          <input type="email" id="nl-email" name="email" autocomplete="email" required aria-describedby="nl-msg">
+          <button class="btn btn--primary" type="submit" disabled>Sign up</button>
+        </div>
+        <p class="nl-msg" id="nl-msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p class="disclosure">Concept site by Emmanuel O. for portfolio purposes. Keelson Auto Care is a fictional business. Front-end prototype of a Squarespace 7.1 layout; forms and bookings are demos and send no data.</p>
+      <ul class="legal-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
